@@ -43,4 +43,10 @@ describe "Static pages" do
 			expect(page).to have_title('About')
 		end
 	end
+	describe "Have right titles" do
+		it "should have the title Users App | Contact Us" do
+			visit '/static_pages/contact'
+			expect(page).to have_title('Contact Us')
+		end
+	end
 end
